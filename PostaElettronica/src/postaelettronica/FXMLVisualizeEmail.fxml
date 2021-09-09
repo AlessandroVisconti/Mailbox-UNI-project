@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="postaelettronica.FXMLVisualizeEmailController">
+   <children>
+      <Label fx:id="lbl_accountName" layoutX="14.0" layoutY="499.0" prefHeight="23.0" prefWidth="490.0" text="Account: " />
+      <TableView fx:id="table_message" layoutX="5.0" layoutY="86.0" onMouseClicked="#table_message_onMouseClicked" prefHeight="200.0" prefWidth="590.0">
+        <columns>
+          <TableColumn fx:id="col_data" prefWidth="75.0" resizable="false" text="Data">
+              <cellValueFactory>
+                  <PropertyValueFactory property="dataInvio" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="col_argomento" prefWidth="405.0" resizable="false" text="Argomento">
+              <cellValueFactory>
+                  <PropertyValueFactory property="argomento" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="col_mittente" minWidth="0.0" prefWidth="109.0" resizable="false" text="Mittente">
+              <cellValueFactory>
+                  <PropertyValueFactory property="mittente" />
+              </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <TextArea fx:id="text_messaggio" editable="false" layoutX="5.0" layoutY="301.0" prefHeight="185.0" prefWidth="590.0" wrapText="true" />
+      <Button fx:id="btn_elimina" layoutX="224.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteEmail" prefHeight="56.0" prefWidth="100.0" text="Elimina" />
+      <Button fx:id="btn_inoltra" layoutX="118.0" layoutY="14.0" mnemonicParsing="false" onAction="#forward" prefHeight="56.0" prefWidth="100.0" text="Inoltra" />
+      <Button fx:id="btn_rispondiATutti" layoutX="441.0" layoutY="14.0" mnemonicParsing="false" onAction="#answerAll" prefHeight="56.0" prefWidth="145.0" text="Rispondi a tutti" />
+      <Button fx:id="btn_rispondi" layoutX="331.0" layoutY="14.0" mnemonicParsing="false" onAction="#answer" prefHeight="56.0" prefWidth="100.0" text="Rispondi" />
+      <Button fx:id="btn_nuovo" layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#newMessage" prefHeight="56.0" prefWidth="100.0" text="Nuovo" />
+   </children>
+</AnchorPane>

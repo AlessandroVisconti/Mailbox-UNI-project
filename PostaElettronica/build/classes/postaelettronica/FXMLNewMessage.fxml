@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="postaelettronica.FXMLNewMessageController">
+   <children>
+      <TextArea fx:id="text_messaggio" layoutY="99.0" prefHeight="330.0" prefWidth="600.0" wrapText="true" />
+      <Button fx:id="btn_invia" layoutX="193.0" layoutY="439.0" mnemonicParsing="false" onAction="#send" prefHeight="47.0" prefWidth="214.0" text="Invia Messaggio" />
+      <Label layoutY="6.0" prefHeight="17.0" prefWidth="88.0" text="Destinatario:" />
+      <Label layoutY="69.0" prefHeight="17.0" prefWidth="88.0" text="Argomento:" />
+      <Label layoutY="37.0" prefHeight="17.0" prefWidth="88.0" text="cc:" />
+      <TextField fx:id="text_destinatario" layoutX="95.0" layoutY="2.0" prefHeight="25.0" prefWidth="503.0" />
+      <TextField fx:id="text_cc" layoutX="95.0" layoutY="33.0" prefHeight="25.0" prefWidth="503.0" />
+      <TextField fx:id="text_argomento" layoutX="95.0" layoutY="65.0" prefHeight="25.0" prefWidth="503.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="158.0" prefWidth="346.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="postaelettronica.FXMLLoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="100.0" layoutY="6.0" prefHeight="49.0" prefWidth="147.0" text="Login" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="86.0" layoutY="116.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="176.0" text="Accedi" />
+      <TextField fx:id="txt_user" layoutX="99.0" layoutY="55.0" />
+      <Label layoutX="14.0" layoutY="55.0" prefHeight="25.0" prefWidth="77.0" text="Username:" />
+   </children>
+</AnchorPane>
